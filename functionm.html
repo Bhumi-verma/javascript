@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!--html>
+    <head>
+        <title>Multiply Function</title>
+    </head>
+    <body>
+        <h1>JavaScript Functions</h1>
+        <p>A function that multiplies two numbers</p>
+        <p id="demo"></p>
+        <script>
+            function multiply(a,b){
+                return a*b;
+            } 
+            let result = multiply(4,5);
+            document.getElementById("demo").innerHTML ="The Result is "+result; 
+        </script>
+    </body>
+</html-->
+<html>
+    <head>
+        <title>Function variables</title>
+    </head>
+    <body>
+        <h1>Javascript functions</h1>
+        <p>Using a function as variable</p>
+        <p id="demo"></p>
+        <script>
+            let text ="The temperature is " + toCelsius(77) + " Celsius.";
+            document.getElementById("demo").innerHTML = text;
+            function toCelsius(fahrenheit){
+                return (5/9)*(fahrenheit-32);
+            }   
+        </script>
+    </body>
+</html>
