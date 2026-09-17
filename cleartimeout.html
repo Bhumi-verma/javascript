@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>clear the timeout</title>
+    </head>
+    <body>
+        <h1>JavaScript Timer</h1>
+        <h2>The setTimeout() Method</h2>
+        <button onclick="startTimer()">Start Timer</button>
+        <button onclick="stopTimer()">Stop Timer</button>
+        <p id="demo"></p>
+        <script>
+            let timer;
+            function startTimer(){
+                timer = setTimeout(function(){
+                    document.getElementById("demo").innerHTML ="Finished";
+                },5000);
+            }
+            function stopTimer(){
+                clearTimeout(timer);
+                document.getElementById("demo").innerHTML ="Timer stopped";
+            }
+        </script>
+    </body>
+</html>
